@@ -1,0 +1,53 @@
+@media (min-width: 320px) {
+  .special__list {
+    max-width: 50%;
+    margin: auto;
+    list-style: none;
+    counter-reset: withnull;
+  }
+
+  .special {
+    position: relative;
+    font-size: 0;
+  }
+
+  .special::before {
+    content: counter(withnull, decimal-leading-zero) "\002E";
+    counter-increment: withnull;
+    font-family: "Acrom-extrabold";
+    text-align: center;
+    font-size: rem(10.71);
+    position: absolute;
+    top: rem(2);
+    left: rem(-21);
+    background: linear-gradient(to right, #fff 25%, #000 25%);
+    color: #000;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+
+  .special__title::before {
+    content: "";
+    display: block;
+    min-width: rem(5);
+    min-height: rem(5);
+    background: #16ebfe;
+    position: absolute;
+    top: rem(15);
+    left: rem(-9);
+  }
+
+  .special > .item__title {
+    margin-bottom: rem(8.71);
+    text-transform: uppercase;
+    line-height: rem(13);
+    font-size: $textSizeMobile;
+    padding: 0;
+  }
+
+  .special > .item__text {
+    font-size: $textSizeMobile;
+    padding: 0;
+    margin-bottom: rem(19.67);
+  }
+}

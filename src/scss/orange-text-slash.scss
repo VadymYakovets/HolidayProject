@@ -1,0 +1,36 @@
+@media (min-width: 320px) {
+  .orange {
+    margin: auto;
+    font-size: $textSizeMobile;
+    max-width: 71.59%;
+    margin-bottom: rem(16);
+    position: relative;
+  }
+
+  .orange::before {
+    content: "";
+    display: block;
+    min-height: rem(1);
+    min-width: rem(10);
+    background: #000;
+    position: absolute;
+    left: rem(-18);
+    top: rem(5);
+    transform: rotate(125deg)
+  }
+}
+
+@media (min-width: 480px) {
+}
+
+@media (min-width: 786px) {
+}
+
+@media (min-width: 960px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
+}

@@ -1,0 +1,113 @@
+.choose-list {
+ display: block;
+ counter-reset: withnull; 
+ list-style: none;
+ }
+ .choose-list li {
+  display: block;
+  position: relative;
+  padding-left: rem(70);
+  padding-right: rem(51);
+ }
+.choose-list li:nth-child(n+1):nth-child(-n+5) {
+margin-bottom: rem(18);
+}
+.choose-list li h3:nth-child(n+1):nth-child(-n+5) {
+  margin-bottom: rem(10);
+}
+.choose-list li:before {
+ background-color: #ff6b08;;
+ content: "[0" counter(withnull, decimal-leading-zero) "]";
+ counter-increment: withnull;
+ line-height: 1;    
+ text-align: center;
+ font-family: "Acrom-medium";
+ font-size: rem(12);
+ color: #ffffff;;
+  position: absolute;
+ top: rem(14);
+ left: rem(35);
+ transform: rotate(-90deg);
+ }
+.list-title {
+font-size: rem(9);
+font-family: "Acrom-bold";
+color: #000000;
+text-align: left;
+line-height: rem(13.54);
+}
+.list-text {
+  font-family: "Acrom-regular";
+  color: #3f4144;
+  font-family: "Acrom-regular", sans-serif;
+  font-size: rem(9);
+  line-height: rem(13.54);
+ }
+
+ @media (min-width: 768px) {
+.choose-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-around;
+    padding: 0;
+  }
+.choose-list li {
+  padding: 0;
+  flex-basis: 32%;
+  margin-bottom: rem(26);
+  max-width: rem(121);
+}
+.choose-list li:nth-child(n+4) {
+  margin-bottom: 0;
+}
+.list-title {
+  color: #000000;
+  font-family: "Acrom-regular";
+  font-size: rem(9);
+  line-height: rem(11.78);
+  
+}
+.list-text {
+  color: #3f4144;
+  font-family: "Acrom-regular";
+  font-size: rem(9);
+  line-height: rem(11.78);
+}
+.choose-list li:before {
+  font-family: "Acrom-medium";
+  font-size: rem(10);
+  top: rem(12);
+  left: rem(-35);
+}
+ }
+ @media (min-width: 1200px) {
+.choose-list li {
+  padding: 0;
+  margin-bottom: rem(30);
+  max-width: rem(128);
+}
+.choose-list li:nth-child(n+4) {
+  margin-bottom: 0;
+}
+.list-title {
+  color: #000000;
+  font-family: "Acrom-regular";
+  font-size: rem(10);
+  line-height: rem(13.13);
+}
+.list-text {
+  color: #3f4144;
+  font-family: "Acrom-regular";
+  font-size: rem(9);
+  line-height: rem(13.13);
+}
+.choose-list li:before {
+  font-family: "Acrom-medium";
+  font-size: rem(9);
+  top: rem(12);
+  left: rem(-35);
+}
+ }
+
