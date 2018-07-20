@@ -1,3 +1,20 @@
+.footer {
+    &__col-wrapper {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__first-col {
+        
+        
+    }
+
+    &__list {
+        
+    }
+}
+
 .footer__sect {
     width: prc(416px, 878px);
     margin: rem(63) auto;
@@ -5,10 +22,10 @@
     box-shadow: rem(-5) rem(6) rem(17) rem(4) rgba(0, 0, 0, 0.11);
 }
 .footer__list {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        margin: auto;
+        // display: flex;
+        // flex-wrap: wrap;
+        // justify-content: space-around;
+        // margin: auto;
         position: relative;
     }
 
@@ -27,7 +44,7 @@
 }
 
 .text__last {
-    padding-left: rem(80);
+    // padding-left: rem(80);
 }
 
 

@@ -25,18 +25,19 @@
         }
     }
     &__main__description{
+        width: 50%;
          &--before{
             @include text;
-            width: rem(460);
+            // width: 50%;
             display: block;
             font-size: $mainTitleMobile;
             font-weight: 700;
             position:relative;
-            padding-left: rem(103);
+            padding-left: rem(30);
             &::before{
                 @extend %before;
-                height: rem(5);
-                width: rem(55);
+                height: rem(1);
+                width: rem(13.5);
                 margin-right:rem(45);
                 position: absolute;
                 top:5px;
@@ -91,12 +92,17 @@
     }
     .one__main__description--before{
         font-size: $mainTitleSmart;
+        padding-left: rem(103);
     }
     .one__article__text__tittle{
         font-size: $mainTitleSmart;
     }
     .one__article__text__content{
         font-size:$textSizeSmart;
+    }
+    .one__main__description--before::before{
+        height: rem(5);
+        width: rem(55);
     }
 }
 @media (min-width: 1200px) {
