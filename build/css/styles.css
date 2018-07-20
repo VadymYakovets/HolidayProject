@@ -619,20 +619,23 @@ ul {
   color: #fff;
 }
 
+.one__main__description {
+  width: 50%;
+}
+
 .one__main__description--before {
   font-family: "Acrom-regular", sans-serif;
   color: #3f4144;
-  width: 28.75rem;
   display: block;
   font-size: 0.75rem;
   font-weight: 700;
   position: relative;
-  padding-left: 6.4375rem;
+  padding-left: 1.875rem;
 }
 
 .one__main__description--before::before {
-  height: 0.3125rem;
-  width: 3.4375rem;
+  height: 0.0625rem;
+  width: 0.84375rem;
   margin-right: 2.8125rem;
   position: absolute;
   top: 5px;
@@ -672,6 +675,110 @@ ul {
 
 .one__article__text__content:last-child {
   margin-bottom: 0;
+}
+
+.section__three {
+  padding: 1rem;
+}
+
+.section__three__title {
+  font-family: "Acrom-extrabold";
+  color: #000;
+  text-align: left;
+  line-height: 1rem;
+  font-size: 0.75rem;
+  max-width: 70%;
+  margin-bottom: 2.125rem;
+  margin-top: 2.75rem;
+}
+
+.black-ground {
+  font-family: "Acrom-extrabold", sans-serif;
+  font-size: 0.75rem;
+}
+
+.section__three__text {
+  padding-left: 1.53125rem;
+  max-width: 70%;
+  text-align: left;
+  font-family: "Acrom-medium", sans-serif;
+  font-size: 0.5625rem;
+  margin-bottom: 2.4375rem;
+  position: relative;
+  line-height: 0.8125rem;
+}
+
+.section__three__text::before {
+  content: "";
+  display: block;
+  min-height: 0.0625rem;
+  min-width: 0.84375rem;
+  background: #000;
+  position: absolute;
+  left: 0rem;
+  top: 0.3125rem;
+}
+
+.footer__col-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.footer__sect {
+  width: 47.38041%;
+  margin: 3.9375rem auto;
+  padding: 3rem;
+  box-shadow: -0.3125rem 0.375rem 1.0625rem 0.25rem rgba(0, 0, 0, 0.11);
+}
+
+.footer__list {
+  position: relative;
+}
+
+.footer__text {
+  flex-basis: 50%;
+  font-family: "Acrom-extrabold", serif;
+  font-size: 0.75rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.125rem;
+  margin-bottom: 0.625rem;
+}
+
+.text__correct {
+  padding-top: 1.25rem;
+}
+
+.text__f {
+  font-family: "Acrom", serif;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.3125rem;
+}
+
+.slash::after {
+  content: "";
+  display: block;
+  min-height: 3rem;
+  min-width: 0.2rem;
+  background: #ff6c02;
+  position: absolute;
+  left: 12rem;
+  top: 3.7rem;
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
+}
+
+.footer__btn {
+  display: block;
+  margin: 3.4375rem auto;
+  padding: 1.25rem 2.1875rem;
+  background-color: #ff6c02;
+  font-family: "Acrom-extrabold", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #ffffff;
+  cursor: pointer;
 }
 
 @media (min-width: 320px) {
@@ -827,6 +934,7 @@ ul {
 
   .one__main__description--before {
     font-size: 1.125rem;
+    padding-left: 6.4375rem;
   }
 
   .one__article__text__tittle {
@@ -835,6 +943,54 @@ ul {
 
   .one__article__text__content {
     font-size: 0.84375rem;
+  }
+
+  .one__main__description--before::before {
+    height: 0.3125rem;
+    width: 3.4375rem;
+  }
+
+  .section__three {
+    display: flex;
+    flex-basis: 52.875rem;
+  }
+
+  .section__three__title {
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+  }
+
+  .black-ground {
+    font-size: 1.125rem;
+  }
+
+  .section__three__text {
+    font-size: 0.84375rem;
+    padding-left: 2.5rem;
+    line-height: 1.5625rem;
+    max-width: 85%;
+  }
+
+  .section__three__text::before {
+    min-height: 0.25rem;
+    min-width: 1.75rem;
+  }
+
+  .section__three__text-box {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 786px) {
+  .orange::before {
+    min-width: 0.1875rem;
+    min-height: 2.1875rem;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+
+  .orange {
+    font-size: 0.9375rem;
   }
 }
 
@@ -884,5 +1040,25 @@ ul {
 
   .one__article__text__content {
     font-size: 1rem;
+  }
+
+  .section__three__title {
+    font-size: 2.25rem;
+    line-height: 3.125rem;
+  }
+
+  .black-ground {
+    font-size: 2.25rem;
+  }
+
+  .section__three__text {
+    font-size: 1rem;
+    padding-left: 4.375rem;
+    max-width: 95%;
+  }
+
+  .section__three__text::before {
+    min-height: 0.5rem;
+    min-width: 3.5rem;
   }
 }
