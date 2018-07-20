@@ -1,0 +1,30 @@
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+.header{
+    @extend %flex;
+    padding-top: rem(20);
+    &__logo__img {
+        width: rem(130);
+        height: rem(40);  
+    }
+    &__contact{
+     @extend %flex;
+      &__email{
+        margin-right: rem(20);  
+        &::before{
+            content: url(../img/letter-icon.png);
+            margin-right: rem(5); 
+        } 
+      }  
+    }
+
+}
+
+.p-nomber::before{
+    content: url(../img/phone-icon.png);
+    margin-right: rem(5);
+}
