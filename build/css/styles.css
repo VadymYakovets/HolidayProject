@@ -398,14 +398,11 @@ template {
 
 /* СПАН ДЛЯ СКОБОК В ЗАГОЛОВКАХ */
 
-<<<<<<< HEAD
 .s-bracket {
   font-family: "Acrom-bold", sans-serif;
   letter-spacing: 0.1875rem;
 }
 
-=======
->>>>>>> master
 /* USE SPAN FOR THIS */
 
 /* ГОЛУБАЯ ПОДВОДКА ТЕКСТА обворачивать спаном с этим классом*/
@@ -461,11 +458,7 @@ ul {
   font-family: "Acrom-regular";
   font-style: normal;
   font-weight: 400;
-<<<<<<< HEAD
   src: url("../fonts/Acrom-regular.ttf") format("truetype");
-=======
-  src: url("../fonts/Acrom_regular.ttf") format("truetype");
->>>>>>> master
 }
 
 /* ACROM MEDIUM */
@@ -513,7 +506,6 @@ ul {
   src: url("../fonts/Gilroy-Light.ttf") format("truetype");
 }
 
-<<<<<<< HEAD
 .list-wrapper {
   width: 400px;
   margin: auto;
@@ -524,8 +516,6 @@ ul {
   color: #000;
 }
 
-=======
->>>>>>> master
 .choose-list {
   display: block;
   counter-reset: withnull;
@@ -579,7 +569,6 @@ ul {
   line-height: 0.84625rem;
 }
 
-<<<<<<< HEAD
 .section-two__wrapper {
   max-width: 863px;
   min-width: 320px;
@@ -950,7 +939,6 @@ img {
   opacity: 0.75;
 }
 
-=======
 .header,
 .header__contact {
   display: flex;
@@ -1178,7 +1166,6 @@ img {
   cursor: pointer;
 }
 
->>>>>>> master
 @media (min-width: 320px) {
   .special__list {
     max-width: 50%;
@@ -1190,18 +1177,11 @@ img {
   .special {
     position: relative;
     font-size: 0;
-<<<<<<< HEAD
     counter-increment: withnull;
-=======
->>>>>>> master
   }
 
   .special::before {
     content: counter(withnull, decimal-leading-zero) ".";
-<<<<<<< HEAD
-=======
-    counter-increment: withnull;
->>>>>>> master
     font-family: "Acrom-extrabold";
     text-align: center;
     font-size: 0.66938rem;
@@ -1285,7 +1265,6 @@ img {
   }
 }
 
-<<<<<<< HEAD
 @media (min-width: 420px) {
   .slick-prev,
   .slick-next {
@@ -1317,8 +1296,6 @@ img {
   }
 }
 
-=======
->>>>>>> master
 @media (min-width: 768px) {
   .choose-list {
     display: flex;
@@ -1361,7 +1338,6 @@ img {
     left: -2.1875rem;
   }
 
-<<<<<<< HEAD
   .section-two__about-me {
     font-size: 1.875rem;
   }
@@ -1445,7 +1421,8 @@ img {
 
   .slider-four__desc {
     font-size: 0.75rem;
-=======
+  }
+
   .one__article {
     display: flex;
     flex-wrap: wrap;
@@ -1515,7 +1492,6 @@ img {
 
   .orange {
     font-size: 0.9375rem;
->>>>>>> master
   }
 }
 
@@ -1551,7 +1527,6 @@ img {
     left: -2.1875rem;
   }
 
-<<<<<<< HEAD
   .section-two__about-me {
     font-size: 2.25rem;
   }
@@ -1617,7 +1592,8 @@ img {
 
   .slider-four__desc {
     font-size: 1rem;
-=======
+  }
+
   .one__main__tittle {
     font-size: 3.75rem;
   }
@@ -1652,6 +1628,5 @@ img {
   .section__three__text::before {
     min-height: 0.5rem;
     min-width: 3.5rem;
->>>>>>> master
   }
 }
