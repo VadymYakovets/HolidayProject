@@ -9,11 +9,11 @@
   .special {
     position: relative;
     font-size: 0;
+    counter-increment: withnull;
   }
 
   .special::before {
     content: counter(withnull, decimal-leading-zero) "\002E";
-    counter-increment: withnull;
     font-family: "Acrom-extrabold";
     text-align: center;
     font-size: rem(10.71);
@@ -50,4 +50,14 @@
     padding: 0;
     margin-bottom: rem(19.67);
   }
+}
+
+.list-wrapper {
+  width: 400px;
+  margin: auto;
+}
+
+.special-title {
+ font-size: 30px;
+ color: #000;
 }
