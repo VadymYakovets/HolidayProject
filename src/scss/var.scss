@@ -3,6 +3,11 @@
   @return #{$result}rem;
 }
 
+@function prc($el, $container){
+  $result: $el / $container * 100%;
+  @return #{$result};
+}
+
 $textSizeMobile: rem(9);
 $mainTitleMobile: rem(12);
 $textSizeSmart: rem(13.5);

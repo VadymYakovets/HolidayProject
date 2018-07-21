@@ -1,0 +1,91 @@
+.section__three {
+  padding: rem(16)
+  // padding-bottom: rem(88);
+}
+
+.section__three__title {
+  font-family: "Acrom-extrabold";
+  color: #000;
+  text-align: left;
+  line-height: rem(16);
+  font-size: $mainTitleMobile;
+  max-width: 70%;
+  margin-bottom: rem(34);
+  margin-top: rem(44);
+}
+
+.black-ground {
+  font-family: "Acrom-extrabold", sans-serif;
+  font-size: $mainTitleMobile;
+}
+
+.section__three__text {
+  padding-left: rem(24.5);
+  max-width: 70%;
+  text-align: left;
+  font-family: "Acrom-medium", sans-serif;
+  font-size: $textSizeMobile;
+  margin-bottom: rem(39);
+  position: relative;
+  line-height: rem(13);
+}
+
+.section__three__text::before {
+  content: "";
+  display: block;
+  min-height: rem(1);
+  min-width: rem(13.5);
+  background: #000;
+  position: absolute;
+  left: rem(0);
+  top: rem(5);
+}
+
+@media (min-width: 768px) {
+  .section__three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: rem(846);
+    flex-basis: rem(846);
+  }
+  .section__three__title {
+    font-size: $mainTitleSmart;
+    line-height: rem(30);
+  }
+  .black-ground {
+    font-size: $mainTitleSmart;
+  }
+  .section__three__text {
+    font-size: $textSizeSmart;
+    padding-left: rem(40);
+    line-height: rem(25);
+    max-width: 85%;
+  }
+  .section__three__text::before {
+    min-height: rem(4);
+    min-width: rem(28);
+  }
+  .section__three__text-box {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section__three__title {
+    font-size: $mainTitleDesktop;
+    line-height: rem(50);
+  }
+  .black-ground {
+    font-size: $mainTitleDesktop;
+  }
+  .section__three__text {
+    font-size: rem(16);
+    padding-left: rem(70);
+    max-width: 95%;
+  }
+  .section__three__text::before {
+    min-height: rem(8);
+    min-width: rem(56);
+  }
+}

@@ -1,0 +1,122 @@
+%flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+%before{
+    content: "";
+    background-color: #000000;
+    display: block;
+}
+
+.one{
+    padding-top: rem(95);
+    padding-left: rem(16);
+    margin-bottom: rem(60);
+    &__main__tittle{
+        @include title;
+        text-transform: none;
+        font-weight: 400;
+        font-size: rem(30);
+        margin-bottom: rem(30);
+        &--black{
+            background-color: black;
+            color:#fff;
+        }
+    }
+    &__main__description{
+        width: 50%;
+         &--before{
+            @include text;
+            // width: 50%;
+            display: block;
+            font-size: $mainTitleMobile;
+            font-weight: 700;
+            position:relative;
+            padding-left: rem(30);
+            &::before{
+                @extend %before;
+                height: rem(1);
+                width: rem(13.5);
+                margin-right:rem(45);
+                position: absolute;
+                top:5px;
+                left:0px;
+            } 
+         }
+    } 
+    &__article{
+        // @extend %flex;
+        margin-top:rem(60);
+        &__text{
+            width: rem(420);
+            &__tittle{
+                @include title;
+                font-size:$mainTitleMobile ;
+               font-weight: 400;
+               
+                margin-bottom: rem(25);
+                &::before{
+                    @extend %before;
+                    margin-bottom:20px;
+                    height: 16px;
+                    width: 16px;
+                }
+            }
+            &__content{
+            // @include s-bracket;
+            font-family: "Acrom-medium", sans-serif;
+                color: #000000;
+                 font-size:$textSizeMobile;
+                 line-height: rem(25);
+                 margin-bottom: rem(35);
+                 &:last-child{
+                    margin-bottom: 0;   
+                 }
+                             
+                
+            }
+        }
+    }
+   
+}  
+
+@media (min-width: 768px) {
+    .one__article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+    .one__main__tittle{
+        font-size: rem(45);
+    }
+    .one__main__description--before{
+        font-size: $mainTitleSmart;
+        padding-left: rem(103);
+    }
+    .one__article__text__tittle{
+        font-size: $mainTitleSmart;
+    }
+    .one__article__text__content{
+        font-size:$textSizeSmart;
+    }
+    .one__main__description--before::before{
+        height: rem(5);
+        width: rem(55);
+    }
+}
+@media (min-width: 1200px) {
+    .one__main__tittle{
+        font-size: rem(60);
+    }
+    .one__main__description--before{
+        font-size: rem(21);
+    }
+    .one__article__text__tittle{
+        font-size: rem(27);
+    }
+    .one__article__text__content{
+        font-size: rem(16);
+    }
+}
+
