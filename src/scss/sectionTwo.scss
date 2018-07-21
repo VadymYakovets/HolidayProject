@@ -1,0 +1,158 @@
+.section-two {
+
+    &__wrapper {
+        max-width: 863px;
+        min-width: 320px;
+        margin: auto;
+        margin-top: 64px;
+        margin-bottom: 60px;
+        padding: 0 15px;
+    }
+
+    &__container {
+    }
+
+    &__about-me {
+        display: inline-block;
+        font-size: $mainTitleMobile;
+    }
+
+    &__slider-wrapper {
+        position: relative;
+        width: 275px;
+        margin: auto;
+        //background-color: #aaa;
+    }
+
+    &__title {
+        // @include title;
+        // letter-spacing: rem(1);
+        // font-size: rem(36.67);
+        // margin-bottom: rem(23);
+    }
+    
+}
+
+.slider {
+
+    &__wrapper {
+        display: block;
+        max-width: rem(277);
+        //background-color: red;
+        margin: auto;
+    }
+
+    &__small-point {
+        position: absolute;
+        top:25px;
+        transform: translatex(480%);
+        width: 8px;
+        height: 8px;
+        background-color:#f06e2c;
+    }
+
+    &__text-box {
+        width: rem(268);
+        height: rem(175);
+        padding: rem(5);
+        margin: auto;
+        //background-color: palegreen;
+    }
+
+    &__text {
+        width: 263px;
+        height: 160px;
+        margin: auto;
+        //background-color: palevioletred;
+        font-size: rem(16.67);
+        padding: rem(40) rem(35);
+        line-height: rem(22);
+        border: 1px solid rgba(50, 50, 50, 0.02);
+        box-shadow: -4px 5px 7px 0px rgba(50, 50, 50, 0.3);   
+    }
+
+    &__desc {
+        font-size:$textSizeMobile;
+        // font-size:$textSizeNotebook;
+        // font-size:$textSizeDesktop;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+
+    .section-two {
+
+        &__about-me {
+            font-size: $mainTitleNotebook;
+            }
+
+        &__slider-wrapper {
+            position: relative;
+            width: 320px;
+            margin: auto;
+            //background-color: #aaa;
+        }    
+    }
+
+    .slider {
+        
+        &__text-box {
+            width: rem(320);
+            height: rem(175);
+            padding: rem(5);
+        }
+
+        &__text {
+            width: 300px;
+            height: 160px;
+            margin: auto;
+            font-size: rem(16.67);
+            padding: rem(40) rem(35);
+            line-height: rem(22);
+            // background-color: #aaa;
+            border: 1px solid rgba(50, 50, 50, 0.02);
+            box-shadow: -4px 5px 7px 0px rgba(50, 50, 50, 0.3);   
+        }
+
+        &__desc {
+            font-size: $textSizeNotebook;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .section-two {
+
+        &__about-me {
+            font-size: $mainTitleDesktop;
+        }
+    }
+
+    .slider {
+        &__desc {
+            font-size: $textSizeDesktop;
+        }
+
+        &__text-box {
+            margin: auto;
+            width: rem(320);
+            height: rem(175);
+            padding: rem(5);
+        }
+
+        &__text {
+            width: 300px;
+            height: 160px;
+            margin: auto;
+            font-size: rem(16.67);
+            padding: rem(40) rem(35);
+            line-height: rem(22);
+            //background-color: #aaa;
+            border: 1px solid rgba(50, 50, 50, 0.02);
+            box-shadow: -4px 5px 7px 0px rgba(50, 50, 50, 0.3);   
+        }
+
+    }
+}
