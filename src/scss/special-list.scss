@@ -9,18 +9,19 @@
   .special {
     position: relative;
     font-size: 0;
+    counter-increment: withnull;
+
   }
 
   .special::before {
     content: counter(withnull, decimal-leading-zero) "\002E";
-    counter-increment: withnull;
     font-family: "Acrom-extrabold";
     text-align: center;
     font-size: rem(10.71);
     position: absolute;
     top: rem(2);
     left: rem(-21);
-    background: linear-gradient(to right, #fff 25%, #000 25%);
+    background: linear-gradient(to right, #fff 15%, #000 25%);
     color: #000;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -31,7 +32,7 @@
     display: block;
     min-width: rem(5);
     min-height: rem(5);
-    background: #16ebfe;
+    background: #ff6b08;
     position: absolute;
     top: rem(15);
     left: rem(-9);
