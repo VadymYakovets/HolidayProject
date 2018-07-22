@@ -398,11 +398,14 @@ template {
 
 /* СПАН ДЛЯ СКОБОК В ЗАГОЛОВКАХ */
 
+<<<<<<< HEAD
+=======
 .s-bracket {
   font-family: "Acrom-bold", sans-serif;
   letter-spacing: 0.1875rem;
 }
 
+>>>>>>> master
 /* USE SPAN FOR THIS */
 
 /* ГОЛУБАЯ ПОДВОДКА ТЕКСТА обворачивать спаном с этим классом*/
@@ -506,6 +509,8 @@ ul {
   src: url("../fonts/Gilroy-Light.ttf") format("truetype");
 }
 
+<<<<<<< HEAD
+=======
 .list-wrapper {
   width: 400px;
   margin: auto;
@@ -516,6 +521,7 @@ ul {
   color: #000;
 }
 
+>>>>>>> master
 .choose-list {
   display: block;
   counter-reset: withnull;
@@ -569,6 +575,55 @@ ul {
   line-height: 0.84625rem;
 }
 
+<<<<<<< HEAD
+.title {
+  font-family: "Acrom-extrabold", sans-serif;
+  color: #fff;
+  font-size: 3.75rem;
+  text-transform: uppercase;
+  margin: 0rem auto 3.5rem;
+  font-size: 1.875rem;
+  max-width: 18.75rem;
+}
+
+.section {
+  position: relative;
+}
+
+.s-bracket {
+  font-family: "Acrom-bold", sans-serif;
+  letter-spacing: 0.1875rem;
+}
+
+.black-ground {
+  color: #fff;
+  background: #000;
+}
+
+.gray-vetical-text {
+  font-family: "Acrom-extrabold", sans-serif;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-size: 5.625rem;
+  line-height: 4.6875rem;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  position: absolute;
+  z-index: -1;
+  left: 0rem;
+  top: 12.8125rem;
+}
+
+.list {
+  max-width: 12.5rem;
+}
+
+.list__item {
+  margin-bottom: 2.1875rem;
+}
+
+.list__title {
+=======
 .section-two__wrapper {
   max-width: 863px;
   min-width: 320px;
@@ -1036,10 +1091,36 @@ img {
 }
 
 .one__article__text__tittle {
+>>>>>>> master
   font-family: "Acrom-extrabold", sans-serif;
   color: #000;
   text-transform: uppercase;
   font-size: 0.75rem;
+<<<<<<< HEAD
+  margin-bottom: 1.25rem;
+  max-width: 12.5rem;
+}
+
+.list__subtitle {
+  color: #ffffff;
+  font-family: "Acrom-regular", sans-serif;
+  font-size: 0.625rem;
+  line-height: 0.9375rem;
+  margin-bottom: 0.1875rem;
+}
+
+.orange-ground {
+  background: #ff6b08;
+}
+
+.text {
+  font-family: "Acrom-regular", sans-serif;
+  color: #3f4144;
+  margin-bottom: 1.125rem;
+  font-size: 0.5625rem;
+  line-height: 0.9375rem;
+  max-width: 12.5rem;
+=======
   font-weight: 400;
   margin-bottom: 1.5625rem;
 }
@@ -1201,6 +1282,7 @@ img {
   font-weight: 400;
   color: #ffffff;
   cursor: pointer;
+>>>>>>> master
 }
 
 @media (min-width: 320px) {
@@ -1225,7 +1307,11 @@ img {
     position: absolute;
     top: 0.125rem;
     left: -1.3125rem;
+<<<<<<< HEAD
+    background: linear-gradient(to right, #fff 15%, #000 25%);
+=======
     background: linear-gradient(to right, #fff 25%, #000 25%);
+>>>>>>> master
     color: #000;
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -1236,7 +1322,11 @@ img {
     display: block;
     min-width: 0.3125rem;
     min-height: 0.3125rem;
+<<<<<<< HEAD
+    background: #ff6b08;
+=======
     background: #16ebfe;
+>>>>>>> master
     position: absolute;
     top: 0.9375rem;
     left: -0.5625rem;
@@ -1302,6 +1392,8 @@ img {
   }
 }
 
+<<<<<<< HEAD
+=======
 @media (min-width: 420px) {
   .slick-prev,
   .slick-next {
@@ -1333,6 +1425,7 @@ img {
   }
 }
 
+>>>>>>> master
 @media (min-width: 768px) {
   .choose-list {
     display: flex;
@@ -1375,6 +1468,79 @@ img {
     left: -2.1875rem;
   }
 
+<<<<<<< HEAD
+  .title {
+    font-size: 3.5625rem;
+    line-height: 4.1875rem;
+    max-width: 37.5rem;
+  }
+
+  .gray-vetical-text {
+    left: 25.25rem;
+  }
+
+  .list {
+    max-width: 48rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 0rem;
+    padding-left: 7.5rem;
+  }
+
+  .list__title {
+    font-size: 0.78125rem;
+    line-height: 1.125rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .list__item {
+    max-width: 17.5rem;
+    flex-basis: 50%;
+    margin-bottom: 0;
+  }
+
+  .list__item-block {
+    height: 15.3125rem;
+  }
+
+  .three {
+    height: 11.25rem;
+  }
+
+  .row-two {
+    height: 11.25rem;
+  }
+
+  .row-three {
+    height: 11.25rem;
+  }
+
+  .row-four {
+    height: 11.25rem;
+  }
+
+  .row-five {
+    height: 12.5rem;
+  }
+
+  .text {
+    font-size: 0.625rem;
+  }
+
+  .special::before {
+    font-size: 1.875rem;
+    line-height: 2.375rem;
+    top: -0.875rem;
+    left: -3.6rem;
+  }
+
+  .special__title::before {
+    top: 1.93125rem;
+    left: -1.6rem;
+    min-width: 0.40625rem;
+    min-height: 0.40625rem;
+=======
   .section-two__about-me {
     font-size: 1.875rem;
   }
@@ -1545,6 +1711,7 @@ img {
 
   .text__correct {
     margin-top: 2.375rem;
+>>>>>>> master
   }
 }
 
@@ -1580,6 +1747,66 @@ img {
     left: -2.1875rem;
   }
 
+<<<<<<< HEAD
+  .title {
+    font-size: 3.5625rem;
+    line-height: 4.1875rem;
+    max-width: 56.25rem;
+  }
+
+  .special::before {
+    font-size: 2.3125rem;
+    line-height: 2.625rem;
+    top: -0.875rem;
+    left: 0.15rem;
+  }
+
+  .special__title::before {
+    top: 1.93125rem;
+    left: 3.2rem;
+    min-width: 0.5rem;
+    min-height: 0.5rem;
+  }
+
+  .list {
+    max-width: 56.25rem;
+    justify-content: space-between;
+    padding-left: 0rem;
+  }
+
+  .list__item {
+    padding-left: 4.375rem;
+    flex-basis: 33%;
+  }
+
+  .list:nth-last-child(-n+2) {
+    justify-content: flex-start;
+  }
+
+  .row-one {
+    height: 15.3125rem;
+  }
+
+  .row-two {
+    height: 12.5rem;
+  }
+
+  .row-three {
+    height: 11.25rem;
+  }
+
+  .row-four {
+    height: 11.875rem;
+  }
+
+  .row-five {
+    height: 12.5rem;
+  }
+
+  .gray-vetical-text {
+    left: 10.75rem;
+    font-size: 11.4375rem;
+=======
   .section-two__about-me {
     font-size: 2.25rem;
   }
@@ -1697,5 +1924,6 @@ img {
 
   .text__correct {
     margin-top: 2.4375rem;
+>>>>>>> master
   }
 }
