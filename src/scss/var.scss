@@ -3,14 +3,27 @@
   @return #{$result}rem;
 }
 
+@function prc($el, $container){
+  $result: $el / $container * 100%;
+  @return #{$result};
+}
+
 $textSizeMobile: rem(9);
 $mainTitleMobile: rem(12);
+$blockTitleMobile: rem(10.5);
+
 $textSizeSmart: rem(13.5);
 $mainTitleSmart: rem(18);
-$textSizeNotebook: rem(10);
+$blockTitleSmart: rem(12.5);
+
+$textSizeNotebook: rem(12);
 $mainTitleNotebook: rem(30);
-$textSizeDesktop: rem(12);
+$blockTitleNotebook: rem(12.5);
+
+$textSizeDesktop: rem(16);
 $mainTitleDesktop: rem(36);
+$blockTitleDesctop: rem(12.5);
+
 
 
 /* Заголовок хедера H1*/
@@ -40,6 +53,7 @@ $mainTitleDesktop: rem(36);
 
 .main__text {
   @include text;
+
 }
 
 /* СЕРЫЙ ВЕРТИКАЬЫНЙ ТЕКС ВОЗЛЕ КАРТИНОК */
@@ -53,6 +67,10 @@ $mainTitleDesktop: rem(36);
 @mixin s-bracket {
   font-family: "Acrom-bold", sans-serif;
   letter-spacing: rem(3);
+}
+
+.s-bracket {
+  @include s-bracket;
 }
 
 /* USE SPAN FOR THIS */

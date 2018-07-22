@@ -1,0 +1,117 @@
+.section__three {
+  // height: 568px;
+  padding: rem(16);
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__three__text-box {
+  // border: 1px solid red;
+ }
+
+.section__three__title {
+  font-family: "Acrom-extrabold";
+  color: #000;
+  text-align: left;
+  line-height: rem(16);
+  font-size: $mainTitleMobile;
+  max-width: 80%;
+  margin-bottom: rem(34);
+  margin-top: rem(44);
+}
+
+// .section__three-img {
+//   width: 50%;
+// }
+// .section__img {
+//   height: 100%;
+//   width: 100%;
+//   border: 1px solid red;
+//   background-color: #aaa;
+//   // background-image: url('../img/section__three.jpg');
+//   // background-repeat: no-repeat;
+//   // background-position: bottom;
+//   // background-size: cover;
+// } 
+
+.black-ground {
+  font-family: "Acrom-extrabold", sans-serif;
+  // font-size: $mainTitleMobile; - нельзя менять стиль общего класса
+}
+
+.section__three__text {
+  padding-left: rem(24.5);
+  max-width: 70%;
+  text-align: left;
+  // font-family: "Acrom-medium", sans-serif;
+  font-size: $textSizeMobile;
+  margin-bottom: rem(39);
+  position: relative;
+  line-height: rem(13);
+}
+
+.section__three__text::before {
+  content: "";
+  display: block;
+  min-height: rem(1);
+  min-width: rem(13.5);
+  background: #000;
+  position: absolute;
+  left: rem(0);
+  top: rem(5);
+}
+
+@media (min-width: 768px) {
+
+  .section__three {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-preferred-size: rem(846);
+    flex-basis: rem(846);
+  }
+
+  .section__three__title {
+    font-size: $mainTitleSmart;
+    line-height: rem(30);
+  }
+
+  .black-ground {
+    // font-size: $mainTitleSmart; - нельзя менять стиль общего класса
+  }
+  .section__three__text {
+    font-size: $textSizeSmart;
+    padding-left: rem(40);
+    line-height: rem(25);
+    max-width: 85%;
+  }
+
+  .section__three__text::before {
+    min-height: rem(4);
+    min-width: rem(28);
+  }
+
+  .section__three__text-box {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .section__three__title {
+    font-size: $mainTitleDesktop;
+    line-height: rem(50);
+  }
+  .black-ground {
+    // font-size: $mainTitleDesktop; - нельзя менять стиль общего класса
+  }
+  .section__three__text {
+    font-size: rem(16);
+    padding-left: rem(70);
+    max-width: 95%;
+  }
+  .section__three__text::before {
+    min-height: rem(8);
+    min-width: rem(56);
+  }
+}
