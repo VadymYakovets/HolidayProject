@@ -6,15 +6,30 @@
 
 .header{
     @extend %flex;
-    padding-top: rem(20);
-    &__logo__img {
-        width: rem(130);
-        height: rem(40);  
+
+    &__logo-img {
+        height: 50px;
+        width: 100%;
+        // background-image: url('../img/logo-img.png');
     }
+
+    padding-top: rem(20);
+
+    // &__logo-link {
+
+        &__logo-img {
+            // width: 100px;
+            // // height: 100px;
+            // // width: rem(130);
+            // height: rem(40);  
+        }
+    // }
+
     &__contact{
      @extend %flex;
       &__email{
         margin-right: rem(20);  
+
         &::before{
             content: url(../img/letter-icon.png);
             margin-right: rem(5); 
