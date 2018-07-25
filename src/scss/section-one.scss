@@ -50,11 +50,11 @@
     &__article{
         // @extend %flex;
         margin-top:rem(60);
-        &____img{
-            display: block;
-            max-width: 100%;
-            height: auto;
-            margin: auto;
+        &__img{
+           display: block;
+           max-width: 100%;
+           height: auto;
+           margin: auto;
         }
         &__text{
             width: 80%;
@@ -64,8 +64,8 @@
                 @include title;
                 font-size:$mainTitleMobile ;
                font-weight: 400;
+               line-height: 2.5rem;
                
-                margin-bottom: rem(25);
                 &::before{
                     @extend %before;
                     margin-bottom:20px;
@@ -107,8 +107,8 @@
     .one__article__img{
         display: block;
         max-width: 50%;
-        height: auto;
-        margin: 0;
+       height: auto;
+         margin: 0;
             
     }
     .one__article__text{
@@ -144,9 +144,11 @@
     }
     .one__article__text__tittle{
         font-size: rem(27);
+        margin-bottom: rem(25);
     }
     .one__article__text__content{
         font-size: rem(16);
+        margin-bottom: rem(32);
     }
 }
 
