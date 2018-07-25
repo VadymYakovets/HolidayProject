@@ -554,8 +554,7 @@ ul {
   line-height: 0.84625rem;
 }
 
-.header,
-.header__contact {
+.header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -563,11 +562,13 @@ ul {
 
 .header {
   padding-top: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .header__logo__img {
-  width: 8.125rem;
-  height: 2.5rem;
+  width: 5rem;
+  height: 1.5625rem;
 }
 
 .header__contact__email {
@@ -584,8 +585,7 @@ ul {
   margin-right: 0.3125rem;
 }
 
-.header,
-.header__contact {
+.header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -599,8 +599,9 @@ ul {
 }
 
 .one {
-  padding-top: 5.9375rem;
+  padding-top: 2.5rem;
   padding-left: 1rem;
+  padding-right: 1rem;
   margin-bottom: 3.75rem;
 }
 
@@ -620,7 +621,7 @@ ul {
 }
 
 .one__main__description {
-  width: 50%;
+  width: 60%;
 }
 
 .one__main__description--before {
@@ -646,8 +647,17 @@ ul {
   margin-top: 3.75rem;
 }
 
+.one__article____img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+}
+
 .one__article__text {
-  width: 26.25rem;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
 }
 
 .one__article__text__tittle {
@@ -669,8 +679,8 @@ ul {
   font-family: "Acrom-medium", sans-serif;
   color: #000000;
   font-size: 0.5625rem;
-  line-height: 1.5625rem;
-  margin-bottom: 2.1875rem;
+  line-height: 0.8125rem;
+  margin-bottom: 1rem;
 }
 
 .one__article__text__content:last-child {
@@ -720,33 +730,58 @@ ul {
 }
 
 .footer__col-wrapper {
+  width: 90%;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__first-col,
+.footer__second-col {
+  width: 49.5%;
+}
+
+.footer__first-col {
+  width: 49.5%;
+  text-align: end;
 }
 
 .footer__sect {
-  width: 47.38041%;
+  width: 100%;
   margin: 3.9375rem auto;
-  padding: 3rem;
+  padding: 48px;
   box-shadow: -0.3125rem 0.375rem 1.0625rem 0.25rem rgba(0, 0, 0, 0.11);
 }
 
-.footer__list {
-  position: relative;
+.black-gr {
+  color: #fff;
+  background-color: #000000;
 }
 
 .footer__text {
-  flex-basis: 50%;
-  font-family: "Acrom-extrabold", serif;
-  font-size: 0.75rem;
-  font-weight: normal;
+  font-family: "Acrom - Extra Bold";
+  font-size: 0.4375rem;
+  font-weight: 900;
   text-transform: uppercase;
   line-height: 1.125rem;
   margin-bottom: 0.625rem;
 }
 
-.text__correct {
-  padding-top: 1.25rem;
+.slash {
+  position: relative;
+}
+
+.slash::after {
+  content: "";
+  display: block;
+  height: 2rem;
+  width: 0.1rem;
+  background: #ff6c02;
+  position: absolute;
+  left: 1rem;
+  top: -0.5rem;
+  -webkit-transform: rotate(80deg);
+  transform: rotate(80deg);
 }
 
 .text__f {
@@ -754,19 +789,6 @@ ul {
   font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.3125rem;
-}
-
-.slash::after {
-  content: "";
-  display: block;
-  min-height: 3rem;
-  min-width: 0.2rem;
-  background: #ff6c02;
-  position: absolute;
-  left: 12rem;
-  top: 3.7rem;
-  -webkit-transform: rotate(80deg);
-  transform: rotate(80deg);
 }
 
 .footer__btn {
@@ -922,10 +944,42 @@ ul {
     left: -2.1875rem;
   }
 
+  .header__logo__img {
+    width: 8.125rem;
+    height: 2.5rem;
+  }
+
+  .header__contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .one {
+    padding-top: 5.9375rem;
+  }
+
+  .one__main__description {
+    width: 50%;
+  }
+
   .one__article {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+
+  .one__article__img {
+    display: block;
+    max-width: 50%;
+    height: auto;
+    margin: 0;
+  }
+
+  .one__article__text {
+    margin-left: 0.9375rem;
+    width: 45%;
+    margin-top: 0;
   }
 
   .one__main__tittle {
@@ -943,6 +997,7 @@ ul {
 
   .one__article__text__content {
     font-size: 0.84375rem;
+    line-height: 1.5625rem;
   }
 
   .one__main__description--before::before {
@@ -978,6 +1033,21 @@ ul {
 
   .section__three__text-box {
     max-width: 50%;
+  }
+
+  .footer__sect {
+    width: 60%;
+  }
+
+  .footer__text {
+    font-size: 0.75rem;
+  }
+
+  .slash::after {
+    height: 3rem;
+    width: 0.2rem;
+    left: 2rem;
+    top: -1rem;
   }
 }
 

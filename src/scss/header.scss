@@ -7,13 +7,14 @@
 .header{
     @extend %flex;
     padding-top: rem(20);
+    padding-left: 1rem;
+    padding-right: 1rem;
     &__logo__img {
-        width: rem(130);
-        height: rem(40);  
+        width: rem(80);
+        height: rem(25);  
     }
     &__contact{
-     @extend %flex;
-      &__email{
+        &__email{
         margin-right: rem(20);  
         &::before{
             content: url(../img/letter-icon.png);
@@ -27,4 +28,16 @@
 .p-nomber::before{
     content: url(../img/phone-icon.png);
     margin-right: rem(5);
+}
+@media (min-width: 768px) {
+    .header__logo__img {
+        width: rem(130);
+        height: rem(40);  
+    }
+    .header__contact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+    }
+
 }
