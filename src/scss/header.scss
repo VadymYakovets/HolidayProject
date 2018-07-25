@@ -7,7 +7,7 @@
     padding-left: 1rem;
     padding-right: 1rem;
     &__logo__img {
-        width: rem(80);
+        width: rem(75);
         height: rem(25);  
     }
     &__contact{
@@ -28,8 +28,8 @@
 }
 @media (min-width: 768px) {
     .header__logo__img {
-        width: 8rem;
-        height: 2.5rem;  
+        width: rem(120);
+        height: rem(40);  
     }
     .header__contact{
         display: flex;
