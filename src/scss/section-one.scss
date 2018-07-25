@@ -10,9 +10,11 @@
 }
 
 .one{
-    padding-top: rem(95);
+    padding-top: rem(40);
     padding-left: rem(16);
+    padding-right: 1rem;
     margin-bottom: rem(60);
+    
     &__main__tittle{
         @include title;
         text-transform: none;
@@ -25,7 +27,7 @@
         }
     }
     &__main__description{
-        width: 50%;
+        width: 60%;
          &--before{
             @include text;
             // width: 50%;
@@ -48,8 +50,16 @@
     &__article{
         // @extend %flex;
         margin-top:rem(60);
+        &____img{
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: auto;
+        }
         &__text{
-            width: rem(420);
+            width: 80%;
+            margin:auto;
+            margin-top:rem(16);
             &__tittle{
                 @include title;
                 font-size:$mainTitleMobile ;
@@ -68,8 +78,9 @@
             font-family: "Acrom-medium", sans-serif;
                 color: #000000;
                  font-size:$textSizeMobile;
-                 line-height: rem(25);
-                 margin-bottom: rem(35);
+                 line-height: rem(13);
+                 margin-bottom: rem(16);
+                                 
                  &:last-child{
                     margin-bottom: 0;   
                  }
@@ -82,10 +93,28 @@
 }  
 
 @media (min-width: 768px) {
+    .one{
+        padding-top: rem(95);
+    }
+    .one__main__description{
+        width: 50%;
+    }
     .one__article{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; 
+    }
+    .one__article__img{
+        display: block;
+        max-width: 50%;
+        height: auto;
+        margin: 0;
+            
+    }
+    .one__article__text{
+        margin-left: rem(15);
+        width: 45%;
+        margin-top:0;
     }
     .one__main__tittle{
         font-size: rem(45);
@@ -99,6 +128,7 @@
     }
     .one__article__text__content{
         font-size:$textSizeSmart;
+        line-height: 1.5625rem;
     }
     .one__main__description--before::before{
         height: rem(5);

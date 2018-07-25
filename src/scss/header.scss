@@ -1,35 +1,18 @@
-%flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;   
-}
 
 .header{
-    @extend %flex;
-
-    &__logo-img {
-        height: 50px;
-        width: 100%;
-        // background-image: url('../img/logo-img.png');
-    }
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: rem(20);
-
-    // &__logo-link {
-
-        &__logo-img {
-            // width: 100px;
-            // // height: 100px;
-            // // width: rem(130);
-            // height: rem(40);  
-        }
-    // }
-
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &__logo__img {
+        width: rem(80);
+        height: rem(25);  
+    }
     &__contact{
-     @extend %flex;
-      &__email{
+        &__email{
         margin-right: rem(20);  
-
         &::before{
             content: url(../img/letter-icon.png);
             margin-right: rem(5); 
@@ -42,4 +25,16 @@
 .p-nomber::before{
     content: url(../img/phone-icon.png);
     margin-right: rem(5);
+}
+@media (min-width: 768px) {
+    .header__logo__img {
+        width: 8rem;
+        height: 2.5rem;  
+    }
+    .header__contact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+    }
+
 }
