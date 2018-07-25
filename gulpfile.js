@@ -54,17 +54,7 @@ gulp.task('styles', () =>
 gulp.task('scripts', () =>
   gulp
     .src('./src/js/**/*.js')
-    .pipe(plumber())
-    .pipe(
-      babel({
-        presets: ['env'],
-      }),
-    )
-    .pipe(concat('scripts.js'))
     .pipe(gulp.dest('./build/js'))
-    .pipe(uglify())
-    .pipe(rename('scripts.min.js'))
-    .pipe(gulp.dest('./build/js')),
 );
 
 gulp.task('svg-sprite', () =>
@@ -99,7 +89,7 @@ gulp.task('fonts', () =>
 );
 
 gulp.task('watch', () => {
-  gulp.watch('src/**/*.html', ['html']).on('change', browserSync.reload);
+  gulp.watch('src/**/*.html', ['html']);
   gulp.watch('src/scss/**/*.scss', ['styles']);
   gulp.watch('src/js/**/*.js', ['scripts']);
 });
