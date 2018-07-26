@@ -1,5 +1,5 @@
 
-.header{
+.header {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -16,15 +16,18 @@
         &::before{
             content: url(../img/letter-icon.png);
             margin-right: rem(5); 
+            font-size: 50px;
         } 
-      }  
+
+        // &__company-number {
+        //     border: 1px solid green;
+
+        //     &__phone-num::before{
+        //         content: url('../img/phone-icon.png');
+        //         margin-right: rem(5);
+        //     }
+        // }
     }
-
-}
-
-.p-nomber::before{
-    content: url(../img/phone-icon.png);
-    margin-right: rem(5);
 }
 @media (min-width: 768px) {
     .header__logo__img {

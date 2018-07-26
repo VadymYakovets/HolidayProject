@@ -8,18 +8,22 @@
   @return #{$result};
 }
 
+$textHeaderMobile: rem(10.5);
 $textSizeMobile: rem(9);
 $mainTitleMobile: rem(12);
 $blockTitleMobile: rem(10.5);
 
+$textHeaderSmart: rem(10.5);
 $textSizeSmart: rem(13.5);
 $mainTitleSmart: rem(18);
 $blockTitleSmart: rem(12.5);
 
+$textHeaderNotebook: rem(10.5);
 $textSizeNotebook: rem(12);
 $mainTitleNotebook: rem(30);
 $blockTitleNotebook: rem(12.5);
 
+$textHeaderDesktop: rem(10.5);
 $textSizeDesktop: rem(16);
 $mainTitleDesktop: rem(36);
 $blockTitleDesctop: rem(12.5);
