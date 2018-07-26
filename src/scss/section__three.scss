@@ -1,8 +1,10 @@
 .section__three {
   // height: 568px;
   padding: rem(16);
-  display: flex;
-  justify-content: space-between;
+  // display: flex;
+  // justify-content: space-between;
+  // border: 1px solid #000;
+  margin-bottom: 65px;
 }
 
 .section__three__text-box {
@@ -18,6 +20,12 @@
   max-width: 80%;
   margin-bottom: rem(34);
   margin-top: rem(44);
+}
+
+.section__three-img {
+  width: 100%;
+  height: 100%;
+  // border: 1px solid green;
 }
 
 // .section__three-img {
@@ -72,15 +80,15 @@
   }
 
   .section__three__title {
-    font-size: $mainTitleSmart;
-    line-height: rem(30);
+    font-size: $mainTitleNotebook;
+    line-height: rem(42);
   }
 
   .black-ground {
-    // font-size: $mainTitleSmart; - нельзя менять стиль общего класса
+    // font-size: $mainTitleNotebook; - нельзя менять стиль общего класса
   }
   .section__three__text {
-    font-size: $textSizeSmart;
+    font-size: $textSizeNotebook;
     padding-left: rem(40);
     line-height: rem(25);
     max-width: 85%;

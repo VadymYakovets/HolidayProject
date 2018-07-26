@@ -3,6 +3,7 @@
     flex-wrap: wrap;
     justify-content: space-between;   
 }
+
 %before{
     content: "";
     background-color: #000000;
@@ -21,6 +22,7 @@
         font-weight: 400;
         font-size: rem(30);
         margin-bottom: rem(30);
+        line-height: 40px;
         &--black{
             background-color: black;
             color:#fff;
@@ -48,6 +50,7 @@
          }
     } 
     &__article{
+        position: relative;
         // @extend %flex;
         margin-top:rem(60);
         &__img{
@@ -91,6 +94,17 @@
     }
    
 }  
+    
+.gray-vetical-text-one {
+    min-width: 300px;
+    position: absolute;
+    @include gray-vetical-text;
+    font-size: rem(90);
+    line-height: rem(75);
+    transform: rotate(90deg) translatex(200%) translateY(-90%);   
+        z-index: -1;
+    }
+
 
 @media (min-width: 768px) {
     .one{
@@ -98,7 +112,9 @@
         padding-top: rem(90);
     }
     .one__main__description{
-        width: 50%;
+        width: 56%;
+        line-height: 28px;
+        font-weight: 700;
     }
     .one__article{
         display: flex;
@@ -119,6 +135,7 @@
     }
     .one__main__tittle{
         font-size: rem(45);
+        line-height: 60px;
     }
     .one__main__description--before{
         font-size: $mainTitleSmart;
@@ -135,10 +152,32 @@
         height: rem(5);
         width: rem(55);
     }
+    .gray-vetical-text-one {
+        position: absolute;
+        @include gray-vetical-text;
+        font-size: rem(183);
+        line-height: rem(75);
+        transform: rotate(90deg) translatex(80%) translateY(-440%);   
+            z-index: -1;
+    }
 }
+
+@media (min-width: 915px) {
+    .gray-vetical-text-one {
+        position: absolute;
+        @include gray-vetical-text;
+        font-size: rem(183);
+        line-height: rem(75);
+        transform: rotate(90deg) translatex(80%) translateY(-600%);   
+            z-index: -1;
+        }
+}
+
+
 @media (min-width: 1200px) {
     .one__main__tittle{
         font-size: rem(60);
+        line-height: 80px;
     }
     .one__main__description--before{
         font-size: rem(21);
@@ -151,5 +190,13 @@
         font-size: rem(16);
         margin-bottom: rem(32);
     }
+    .gray-vetical-text-one {
+        position: absolute;
+        @include gray-vetical-text;
+        font-size: rem(183);
+        line-height: rem(75);
+        transform: rotate(90deg) translatex(80%) translateY(-600%);   
+        z-index: -1;
+        }
 }
 
