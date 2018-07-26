@@ -89,7 +89,7 @@
 
 .footer__btn {
     display: block;
-    margin: rem(55) auto;
+    margin: rem(55)auto;
     padding: rem(20) rem(35);
     background-color: #ff6c02;
     font-family: "Acrom-extrabold", sans-serif;
@@ -152,4 +152,18 @@
         margin-top: rem(39);
     }
 
+}
+@media(min-width: 768px){
+    .footer__sect {
+        width: 60%;
+    }
+    .footer__text{
+        font-size: rem(12);
+    }
+    .slash::after {
+        height: 3rem;
+        width: 0.2rem;
+        left: 2rem;
+        top: -1rem;
+    }
 }

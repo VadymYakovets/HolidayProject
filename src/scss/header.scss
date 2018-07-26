@@ -1,52 +1,20 @@
-%flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;   
-}
 
 .header {
-
-    &__wrapper {
-        @extend %flex;
-        border: 1px solid red;
-        padding-top: rem(20);
-        align-items: flex-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: rem(20);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    &__logo__img {
+        width: rem(75);
+        height: rem(25);  
     }
-
-    &__logo-img {
-        border: 2px solid green;
-        width: 128px;
-        height: 40px;
-        background-image: url('../img/logo-img.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-    &__contact {
-
-        width: 228px;
-        // font-size: $textHeaderMobile;
-        // font-size: $textHeaderNotebook;
-        font-size: $textHeaderDesktop;
-        line-height: 14.58px;
-
-        @extend %flex;
-        align-items: center;
-        border: 1px solid blue;
-
-        // &__email {
-        //     color: red;
-        //     font-size: 50px;
-        // }
-
-        // &__email {
-        //     margin-right: rem(20);  
-        //     font-size: 50px;
-        // }  
-
-        &__email-address {
-            content: "\2709";
+    &__contact{
+        &__email{
+        margin-right: rem(20);  
+        &::before{
+            content: url(../img/letter-icon.png);
             margin-right: rem(5); 
             font-size: 50px;
         } 
@@ -61,5 +29,15 @@
         // }
     }
 }
+@media (min-width: 768px) {
+    .header__logo__img {
+        width: rem(120);
+        height: rem(40);  
+    }
+    .header__contact{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;    
+    }
 
-
+}
