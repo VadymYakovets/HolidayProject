@@ -4,42 +4,62 @@
     justify-content: space-between;   
 }
 
-.header{
-    @extend %flex;
+.header {
+
+    &__wrapper {
+        @extend %flex;
+        border: 1px solid red;
+        padding-top: rem(20);
+        align-items: flex-end;
+    }
 
     &__logo-img {
-        height: 50px;
-        width: 100%;
-        // background-image: url('../img/logo-img.png');
+        border: 2px solid green;
+        width: 128px;
+        height: 40px;
+        background-image: url('../img/logo-img.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 
-    padding-top: rem(20);
+    &__contact {
 
-    // &__logo-link {
+        width: 228px;
+        // font-size: $textHeaderMobile;
+        // font-size: $textHeaderNotebook;
+        font-size: $textHeaderDesktop;
+        line-height: 14.58px;
 
-        &__logo-img {
-            // width: 100px;
-            // // height: 100px;
-            // // width: rem(130);
-            // height: rem(40);  
-        }
-    // }
+        @extend %flex;
+        align-items: center;
+        border: 1px solid blue;
 
-    &__contact{
-     @extend %flex;
-      &__email{
-        margin-right: rem(20);  
+        // &__email {
+        //     color: red;
+        //     font-size: 50px;
+        // }
 
-        &::before{
-            content: url(../img/letter-icon.png);
+        // &__email {
+        //     margin-right: rem(20);  
+        //     font-size: 50px;
+        // }  
+
+        &__email-address {
+            content: "\2709";
             margin-right: rem(5); 
+            font-size: 50px;
         } 
-      }  
+
+        // &__company-number {
+        //     border: 1px solid green;
+
+        //     &__phone-num::before{
+        //         content: url('../img/phone-icon.png');
+        //         margin-right: rem(5);
+        //     }
+        // }
     }
-
 }
 
-.p-nomber::before{
-    content: url(../img/phone-icon.png);
-    margin-right: rem(5);
-}
+
