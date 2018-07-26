@@ -1,10 +1,9 @@
 .section-four {
     
     &__container {
-        max-width: 863px;
         margin: auto;
         padding: 0 rem(15);
-        margin-bottom: rem(160);
+        margin-bottom: rem(150);
     }
 
     &__title-wrapper {
@@ -27,12 +26,12 @@
     }
 }
 
-// img {
-//     min-width: rem(270);
-//     height: rem(297);
-//     margin: auto;
-//     padding: rem(5);
-// }
+.img-box__img {
+    min-width: rem(270);
+    height: rem(297);
+    margin: auto;
+    padding: rem(5);
+}
 
 .slider-four {
 

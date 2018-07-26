@@ -2,42 +2,85 @@
 .header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: rem(20);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    justify-content: center;
+    padding: rem(20) rem(15);
+    // border: 1px solid green;
+
     &__logo__img {
-        width: rem(75);
-        height: rem(25);  
+        width: rem(128);
+        height: rem(40);  
+        margin-bottom: 15px;
     }
-    &__contact{
-        &__email{
-        margin-right: rem(20);  
-        &::before{
-            content: url(../img/letter-icon.png);
-            margin-right: rem(5); 
-            font-size: 50px;
-        } 
+}
 
-        // &__company-number {
-        //     border: 1px solid green;
+.header__contact-wrapper {
+    min-width: 228px;
+    // border: 2px solid red;
+}
 
-        //     &__phone-num::before{
-        //         content: url('../img/phone-icon.png');
-        //         margin-right: rem(5);
-        //     }
+.contact-wrapper__contact {
+        // background-color: #aaa;
+        display: flex;
+        align-items: center;
+        font-size: $textHeaderMobile;
+        justify-content: space-between;
+        line-height: 14.58px;
+    }
+
+.contact__email::before{
+        content: url(../img/letter-icon.png);
+        margin-right: rem(5); 
+        // font-size: 50px;
+    } 
+
+.contact__p-number::before{
+        content: url(../img/phone-icon.png);
+        margin-right: rem(5);
+    }
+
+    
+    // &__contact {
+
+    //         &__email {
+    //         margin-right: rem(20);
+    //         color: #fff;  
+            
+    //         &::before{
+    //             content: url(../img/letter-icon.png);
+    //             margin-right: rem(5); 
+    //             font-size: 50px;
+    //         } 
+
+    //         &__p-nomber {
+    //             border: 1px solid green;
+
+    //             &::before{
+    //                 content: url(../img/phone-icon.png);
+    //                 margin-right: rem(5);
+    //             }
+    //         }
+    //     }
+    // }
+
+
+
+    @media (min-width: 380px), (min-width: 768px) {
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    
+        .header__logo__img {
+            width: rem(120);
+            height: rem(40);
+            margin-bottom: 0;
+        }
+
+        // .header__contact{
+        //     display: flex;
+        //     flex-wrap: wrap;
+        //     justify-content: space-between;    
         // }
     }
-}
-@media (min-width: 768px) {
-    .header__logo__img {
-        width: rem(120);
-        height: rem(40);  
-    }
-    .header__contact{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;    
-    }
-
-}
