@@ -1069,6 +1069,7 @@ ul {
   font-weight: 400;
   font-size: 1.875rem;
   margin-bottom: 1.875rem;
+  line-height: 40px;
 }
 
 .one__main__tittle--black {
@@ -1100,6 +1101,7 @@ ul {
 }
 
 .one__article {
+  position: relative;
   margin-top: 3.75rem;
 }
 
@@ -1141,6 +1143,19 @@ ul {
 
 .one__article__text__content:last-child {
   margin-bottom: 0;
+}
+
+.gray-vetical-text-one {
+  min-width: 300px;
+  position: absolute;
+  font-family: "Acrom-extrabold", sans-serif;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-size: 5.625rem;
+  line-height: 4.6875rem;
+  -webkit-transform: rotate(90deg) translatex(200%) translateY(-90%);
+  transform: rotate(90deg) translatex(200%) translateY(-90%);
+  z-index: -1;
 }
 
 .section__three {
@@ -1627,8 +1642,14 @@ ul {
     font-size: 0.75rem;
   }
 
+  .one {
+    padding-top: 5.9375rem;
+  }
+
   .one__main__description {
-    width: 50%;
+    width: 56%;
+    line-height: 28px;
+    font-weight: 700;
   }
 
   .one__article {
@@ -1652,6 +1673,7 @@ ul {
 
   .one__main__tittle {
     font-size: 2.8125rem;
+    line-height: 60px;
   }
 
   .one__main__description--before {
@@ -1671,6 +1693,18 @@ ul {
   .one__main__description--before::before {
     height: 0.3125rem;
     width: 3.4375rem;
+  }
+
+  .gray-vetical-text-one {
+    position: absolute;
+    font-family: "Acrom-extrabold", sans-serif;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 11.4375rem;
+    line-height: 4.6875rem;
+    -webkit-transform: rotate(90deg) translatex(80%) translateY(-440%);
+    transform: rotate(90deg) translatex(80%) translateY(-440%);
+    z-index: -1;
   }
 
   .section__three {
@@ -1745,6 +1779,20 @@ ul {
 
   .text__correct {
     margin-top: 2.375rem;
+  }
+}
+
+@media (min-width: 915px) {
+  .gray-vetical-text-one {
+    position: absolute;
+    font-family: "Acrom-extrabold", sans-serif;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 11.4375rem;
+    line-height: 4.6875rem;
+    -webkit-transform: rotate(90deg) translatex(80%) translateY(-600%);
+    transform: rotate(90deg) translatex(80%) translateY(-600%);
+    z-index: -1;
   }
 }
 
@@ -1904,6 +1952,7 @@ ul {
 
   .one__main__tittle {
     font-size: 3.75rem;
+    line-height: 80px;
   }
 
   .one__main__description--before {
@@ -1918,6 +1967,18 @@ ul {
   .one__article__text__content {
     font-size: 1rem;
     margin-bottom: 2rem;
+  }
+
+  .gray-vetical-text-one {
+    position: absolute;
+    font-family: "Acrom-extrabold", sans-serif;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    font-size: 11.4375rem;
+    line-height: 4.6875rem;
+    -webkit-transform: rotate(90deg) translatex(80%) translateY(-600%);
+    transform: rotate(90deg) translatex(80%) translateY(-600%);
+    z-index: -1;
   }
 
   .section__three__title {
