@@ -70,7 +70,7 @@ $blockTitleDesctop: rem(12.5);
 /* СПАН ДЛЯ СКОБОК В ЗАГОЛОВКАХ */
 @mixin s-bracket {
   font-family: "Acrom-bold", sans-serif;
-  letter-spacing: rem(3);
+  // letter-spacing: rem(3);
 }
 
 .s-bracket {
