@@ -21,7 +21,8 @@
         text-transform: none;
         font-weight: 400;
         font-size: rem(30);
-        margin-bottom: rem(30);
+        margin-top: 0;
+        margin-bottom: rem(15);
         line-height: 40px;
         &--black{
             background-color: black;
@@ -29,13 +30,11 @@
         }
     }
     &__main__description{
-        width: 60%;
+        width: 70%;
          &--before{
-            @include text;
-            // width: 50%;
+            font-family: "Acrom-extrabold";
             display: block;
-            font-size: $mainTitleMobile;
-            font-weight: 700;
+            font-size: rem(10);
             position:relative;
             padding-left: rem(30);
             &::before{
@@ -51,8 +50,7 @@
     } 
     &__article{
         position: relative;
-        // @extend %flex;
-        margin-top:rem(60);
+         margin-top:rem(30);
         &__img{
            display: block;
            max-width: 100%;
@@ -64,25 +62,27 @@
             margin:auto;
             margin-top:rem(16);
             &__tittle{
-                @include title;
-                font-size:$mainTitleMobile ;
+               
+                font-family: "Acrom-extrabold", sans-serif;
+                color: #000;
                font-weight: 400;
-               line-height: 2.5rem;
+            
+            margin-bottom: rem(10);
                
                 &::before{
                     @extend %before;
                     margin-bottom:20px;
-                    height: 16px;
-                    width: 16px;
+                    height: 8px;
+                    width: 8px;
                 }
             }
             &__content{
-            // @include s-bracket;
+            
             font-family: "Acrom-medium", sans-serif;
                 color: #000000;
                  font-size:$textSizeMobile;
                  line-height: rem(13);
-                 margin-bottom: rem(16);
+                 margin-bottom: rem(12);
                                  
                  &:last-child{
                     margin-bottom: 0;   
@@ -120,6 +120,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between; 
+        margin-top:rem(60);
     }
     .one__article__img{
         display: block;
@@ -136,21 +137,31 @@
     .one__main__tittle{
         font-size: rem(45);
         line-height: 60px;
+        margin-bottom: rem(35);
+        
     }
     .one__main__description--before{
-        font-size: $mainTitleSmart;
+        font-family: "Acrom-extrabold";
+            display: block;
+          font-size: rem(18);  
         padding-left: rem(103);
     }
     .one__article__text__tittle{
-        font-size: $mainTitleSmart;
+        font-size: rem(30);
+        line-height: 2.5rem;
+      
+    }
+    .one__article__text__tittle::before{
+        height: 16px;
+        width: 16px;
     }
     .one__article__text__content{
         font-size:$textSizeSmart;
         line-height: 1.5625rem;
     }
     .one__main__description--before::before{
-        height: rem(5);
-        width: rem(55);
+        height: rem(6);
+        width: rem(57);
     }
     .gray-vetical-text-one {
         position: absolute;
@@ -181,13 +192,21 @@
     }
     .one__main__description--before{
         font-size: rem(21);
+         font-weight: 700;
+    }
+    .one__article__text__tittle::before{
+        margin-bottom: rem(25);
     }
     .one__article__text__tittle{
-        font-size: rem(27);
+        font-size: rem(37);
+        font-weight: 400;
+         line-height: rem(50);
         margin-bottom: rem(25);
     }
     .one__article__text__content{
-        font-size: rem(16);
+        font-weight: 500;
+        line-height: 25px;
+        font-size: rem(15);
         margin-bottom: rem(32);
     }
     .gray-vetical-text-one {
