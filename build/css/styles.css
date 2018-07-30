@@ -1154,8 +1154,8 @@ ul {
   text-transform: uppercase;
   font-size: 5.625rem;
   line-height: 4.6875rem;
-  -webkit-transform: rotate(90deg) translatex(200%) translateY(-90%);
-  transform: rotate(90deg) translatex(200%) translateY(-90%);
+  -webkit-transform: rotate(90deg) translatex(200%) translateY(-150%);
+  transform: rotate(90deg) translatex(200%) translateY(-150%);
   z-index: -1;
 }
 
@@ -1497,7 +1497,9 @@ ul {
   }
 
   .gray-vetical-text {
-    left: 25.25rem;
+    font-size: 11.4375rem;
+    top: 15rem;
+    left: 6.875rem;
   }
 
   .list {
@@ -1713,8 +1715,8 @@ ul {
     text-transform: uppercase;
     font-size: 11.4375rem;
     line-height: 4.6875rem;
-    -webkit-transform: rotate(90deg) translatex(80%) translateY(-440%);
-    transform: rotate(90deg) translatex(80%) translateY(-440%);
+    -webkit-transform: rotate(90deg) translatex(80%) translateY(-500%);
+    transform: rotate(90deg) translatex(80%) translateY(-500%);
     z-index: -1;
   }
 

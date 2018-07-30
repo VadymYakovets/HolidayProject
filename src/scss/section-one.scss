@@ -95,7 +95,7 @@
     @include gray-vetical-text;
     font-size: rem(90);
     line-height: rem(75);
-    transform: rotate(90deg) translatex(200%) translateY(-90%);   
+    transform: rotate(90deg) translatex(200%) translateY(-150%);   
         z-index: -1;
     }
 
@@ -162,7 +162,7 @@
         @include gray-vetical-text;
         font-size: rem(183);
         line-height: rem(75);
-        transform: rotate(90deg) translatex(80%) translateY(-440%);   
+        transform: rotate(90deg) translatex(80%) translateY(-500%);   
             z-index: -1;
     }
 }
