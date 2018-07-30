@@ -13,43 +13,38 @@
 }
 
 .header__contact-wrapper {
-    min-width: 228px;
+   min-width: 228px;
 }
 
 .contact-wrapper__contact {
-      
-        display: flex;
-        align-items: center;
-        font-size: $textHeaderMobile;
-        justify-content: space-between;
-        line-height: 14.58px;
-    }
+    display: flex;
+    align-items: center;
+    font-size: $textHeaderMobile;
+    justify-content: space-between;
+    line-height: 14.58px;
+}
 .contact__email{
     margin-right: rem(20);
 }
 .contact__email::before{
-        content: url(../img/letter-icon.png);
-        margin-right: rem(5); 
-     } 
+    content: url(../img/letter-icon.png);
+    margin-right: rem(5); 
+} 
 
 .contact__p-number::before{
-        content: url(../img/phone-icon.png);
-        margin-right: rem(5);
+    content: url(../img/phone-icon.png);
+    margin-right: rem(5);
+}
+
+@media (min-width: 380px), (min-width: 768px) {
+ .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.header__logo__img {
+    width: rem(120);
+    height: rem(40);
+    margin-bottom: 0;
     }
-
-    @media (min-width: 380px), (min-width: 768px) {
-
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-        }
-    
-        .header__logo__img {
-            width: rem(120);
-            height: rem(40);
-            margin-bottom: 0;
-        }
-
-       
-    }
+}
